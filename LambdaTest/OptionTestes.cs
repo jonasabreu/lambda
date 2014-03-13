@@ -161,6 +161,12 @@ namespace CSharpOptions.Testes
 
             res.Should().Be(13);
         }
+
+        [Test]
+        public void OptionMustBeCovariant()
+        {
+            Option<object> opt = "abc".ToOption();
+        }
     }
 
     public class Pessoa
