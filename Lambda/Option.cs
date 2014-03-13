@@ -11,14 +11,18 @@ namespace CSharpOptions
 
     struct Some<T> : Option<T>, IEquatable<Option<T>>
     {
+
+        private readonly bool hasValue;
+        private readonly T value;
+
         public Some(T value) : this()
         {
-            Value = value;
-            HasValue = true;
+            this.value = value;
+            this.hasValue = true;
         }
 
-        public bool HasValue { get; private set; }
-        public T Value { get; private set; }
+        public bool HasValue { get {return hasValue; } }
+        public T Value { get { return value;  } }
 
         public bool Equals(Option<T> other)
         {
