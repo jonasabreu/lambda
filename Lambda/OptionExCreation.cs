@@ -13,14 +13,14 @@
             return default(None<T>);
         }
 
-        public static Option<T> From<T>(T value)
+        public static Option<T> Of<T>(T value)
         {
             return value == null ? None<T>() : new Some<T>(value);
         }
 
         public static Option<T> ToOption<T>(this T value)
         {
-            return From(value);
+            return Of(value);
         }
     }
 }

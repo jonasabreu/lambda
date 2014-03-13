@@ -50,9 +50,9 @@ namespace CSharpOptions.Testes
         [Test]
         public void FromValue()
         {
-            var option = Option.From(1);
+            var option = Option.Of(1);
 
-            option.Should().Be(Option.From(1));
+            option.Should().Be(Option.Of(1));
         }
 
         [Test]
@@ -60,13 +60,13 @@ namespace CSharpOptions.Testes
         {
             var option = 1.ToOption();
 
-            option.Should().Be(Option.From(1));
+            option.Should().Be(Option.Of(1));
         }
 
         [Test]
         public void FromNull()
         {
-            var option = Option.From<string>(null);
+            var option = Option.Of<string>(null);
 
             option.Should().Be(Option.None<string>());
         }
@@ -74,10 +74,10 @@ namespace CSharpOptions.Testes
         [Test]
         public void LinqSelect()
         {
-            var res = from x in Option.From(1)
+            var res = from x in Option.Of(1)
                       select x;
 
-            res.Should().Be(Option.From(1));
+            res.Should().Be(Option.Of(1));
         }
 
         [Test]
@@ -92,11 +92,11 @@ namespace CSharpOptions.Testes
                 }
             };
 
-            var res = from p in Option.From(pessoa)
+            var res = from p in Option.Of(pessoa)
                       from e in p.Endereco.ToOption()
                       select e.Cidade;
 
-            res.Should().Be(Option.From("Winterfell"));
+            res.Should().Be(Option.Of("Winterfell"));
         }
 
         [Test]
@@ -107,7 +107,7 @@ namespace CSharpOptions.Testes
                 Nome = "Robb Stark"
             };
 
-            var res = (from p in Option.From(pessoa)
+            var res = (from p in Option.Of(pessoa)
                       from e in p.Endereco.ToOption()
                       select e.Cidade).GetOrElse("Sem endereco");
 
