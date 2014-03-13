@@ -143,6 +143,24 @@ namespace CSharpOptions.Testes
 
             res.Should().Be(Option.None<Pessoa>());
         }
+
+        [Test]
+        public void NoneFromNullable()
+        {
+            int? i = null;
+            var res = i.ToOption().Map(s => s + 1).GetOrElse(10);
+
+            res.Should().Be(10);
+        }
+
+        [Test]
+        public void SomeFromNullable()
+        {
+            int? i = 12;
+            var res = i.ToOption().Map(s => s + 1).GetOrElse(10);
+
+            res.Should().Be(13);
+        }
     }
 
     public class Pessoa

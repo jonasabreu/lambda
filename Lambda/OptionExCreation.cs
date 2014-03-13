@@ -18,7 +18,17 @@
             return value == null ? None<T>() : new Some<T>(value);
         }
 
+        public static Option<T> Of<T>(T? value) where T : struct
+        {
+            return !value.HasValue ? None<T>() : new Some<T>(value.Value);
+        }
+
         public static Option<T> ToOption<T>(this T value)
+        {
+            return Of(value);
+        }
+
+        public static Option<T> ToOption<T>(this T? value) where T : struct
         {
             return Of(value);
         }
