@@ -20,18 +20,37 @@ namespace LambdaGenerators
                         Enumerable.Range(1, i).Select(x => Interface(x))
                     ),
                     Namespace("Lambda", () =>
+                        new List<string> {
+                            TupleCreator(i)
+                        }.Concat(
                         Enumerable.Range(1, i).Select(x =>
                             Class(x, () =>
                                 string.Join("\r\n", 
                                     Fields(x)
                                 ) + Constructor(x)
                             )
-                       )
+                       ))
                     )
                 }
             );
 
+
             File.WriteAllText("../../../Lambda/Tuples.cs", classes);
+        }
+
+        private static string TupleCreator(int k)
+        {
+            return "public static class _ \r\n{\r\n" +
+                string.Join("\r\n", Enumerable.Range(1, k).Select(TupleCreatorMethod)) + 
+                "\r\n}";
+        }
+
+        private static string TupleCreatorMethod(int k)
+        {
+            return
+                "public static Tuple" + TypeSignature(k) + " t" + TypeSignature(k) + "(" + Parameters(k) + ") {\r\n" +
+                "return new Tuple" + TypeSignature(k) + "(" + string.Join(", ", Enumerable.Range(1, k).Select(e => "_" + e)) + ");" +
+                "\r\n}";
         }
 
         public static string Interface(int i)
