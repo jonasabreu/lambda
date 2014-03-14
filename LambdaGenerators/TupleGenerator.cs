@@ -34,14 +34,41 @@ namespace LambdaGenerators
                 }
             );
 
+            var testes =
+            Using("using FluentAssertions;\r\nusing NUnit.Framework;\r\n", () =>
+                new List<string>
+                {
+                    Namespace("LambdaTest", () =>
+                        new List<string> 
+                        {
+                            TupleVarianceTest(i)
+                        }    
+                    )
+                }
+            );
 
-            File.WriteAllText("../../../Lambda/Tuples.cs", classes);
+            //File.WriteAllText("../../../Lambda/Tuples.cs", classes);
+
+            Console.Write(testes);
+            Console.ReadLine();
+        }
+
+        private static string TupleVarianceTest(int k)
+        {
+            return "public class TupleVarianceTest\r\n{\r\n" +
+                        string.Join("\r\n", Enumerable.Range(1, k).Select(TupleVarianceTestMethod)) +
+                   "\r\n}";
+        }
+
+        private static string TupleVarianceTestMethod(int k)
+        {
+            return "";
         }
 
         private static string TupleCreator(int k)
         {
             return "public static class _ \r\n{\r\n" +
-                string.Join("\r\n", Enumerable.Range(1, k).Select(TupleCreatorMethod)) + 
+                string.Join("\r\n", Enumerable.Range(1, k).Select(TupleCreatorMethod)) +
                 "\r\n}";
         }
 
