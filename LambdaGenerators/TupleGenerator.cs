@@ -31,7 +31,7 @@ namespace LambdaGenerators
                 }
             );
 
-            File.WriteAllText("../../Tuples.cs", classes);
+            File.WriteAllText("../../../Lambda/Tuples.cs", classes);
         }
 
         public static string Interface(int i)
