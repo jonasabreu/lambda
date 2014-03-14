@@ -12,6 +12,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{D885C3
 		.nuget\NuGet.Config = .nuget\NuGet.Config
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LambdaGenerators", "LambdaGenerators\LambdaGenerators.csproj", "{DAA175BC-B88B-4A1D-898F-B5D84D186D5B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,6 +28,10 @@ Global
 		{D85FF6DD-1CBB-454A-8619-BA069F7EAF2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D85FF6DD-1CBB-454A-8619-BA069F7EAF2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D85FF6DD-1CBB-454A-8619-BA069F7EAF2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAA175BC-B88B-4A1D-898F-B5D84D186D5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAA175BC-B88B-4A1D-898F-B5D84D186D5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAA175BC-B88B-4A1D-898F-B5D84D186D5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAA175BC-B88B-4A1D-898F-B5D84D186D5B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
