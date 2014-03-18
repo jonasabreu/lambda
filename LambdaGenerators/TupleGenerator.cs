@@ -24,16 +24,14 @@ namespace LambdaGenerators
         {
             var i = 23;
             var classes =
-            Using("using LambdaInternal;\r\nusing Lambda;\r\n", () =>
+            Using("using Lambda;\r\n", () =>
                 new List<string> {
                     Namespace("Lambda", () =>
                         new List<string> {
                             TupleCreator(i)
                         }.Concat(
                         Enumerable.Range(1, i).Select(x => Interface(x))
-                        )
-                    ),
-                    Namespace("LambdaInternal", () =>
+                        ).Concat(
                         Enumerable.Range(1, i).Select(x =>
                             Class(x, () =>
                                 string.Join("\r\n", 
@@ -41,7 +39,7 @@ namespace LambdaGenerators
                                 ) + Constructor(x) +
                                 GetterImpls(x)
                             )
-                       ))
+                       )))
                 }
             );
 
@@ -169,7 +167,7 @@ namespace LambdaGenerators
 
         public static string Class(int i, Func<string> f)
         {
-            return "public struct RecInternal" + TypeSignature(i) + " : Rec" + TypeSignature(i) + "\r\n{\r\n" + f() + "\r\n}\r\n";
+            return "struct RecInternal" + TypeSignature(i) + " : Rec" + TypeSignature(i) + "\r\n{\r\n" + f() + "\r\n}\r\n";
         }
 
         public static string TypeSignature(int i, string prefix = "")
