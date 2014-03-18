@@ -205,6 +205,7 @@ namespace LambdaTest
         {
             var t = _.t(new B0());
             A0 a0 = t._1;
+            Assert.NotNull(a0);
         }
 
         [Test]
@@ -213,6 +214,8 @@ namespace LambdaTest
             var t = _.t(new B0(), new B1());
             A0 a0 = t._1;
             A1 a1 = t._2;
+            Assert.NotNull(a0);
+            Assert.NotNull(a1);
         }
 
         [Test]
@@ -222,6 +225,9 @@ namespace LambdaTest
             A0 a0 = t._1;
             A1 a1 = t._2;
             A2 a2 = t._3;
+            Assert.NotNull(a0);
+            Assert.NotNull(a1);
+            Assert.NotNull(a2);
         }
 
         [Test]
@@ -232,6 +238,10 @@ namespace LambdaTest
             A1 a1 = t._2;
             A2 a2 = t._3;
             A3 a3 = t._4;
+            Assert.NotNull(a0);
+            Assert.NotNull(a1);
+            Assert.NotNull(a2);
+            Assert.NotNull(a3);
         }
 
         [Test]
@@ -243,6 +253,11 @@ namespace LambdaTest
             A2 a2 = t._3;
             A3 a3 = t._4;
             A4 a4 = t._5;
+            Assert.NotNull(a0);
+            Assert.NotNull(a1);
+            Assert.NotNull(a2);
+            Assert.NotNull(a3);
+            Assert.NotNull(a4);
         }
 
         [Test]
@@ -255,6 +270,12 @@ namespace LambdaTest
             A3 a3 = t._4;
             A4 a4 = t._5;
             A5 a5 = t._6;
+            Assert.NotNull(a0);
+            Assert.NotNull(a1);
+            Assert.NotNull(a2);
+            Assert.NotNull(a3);
+            Assert.NotNull(a4);
+            Assert.NotNull(a5);
         }
 
         [Test]
@@ -268,6 +289,13 @@ namespace LambdaTest
             A4 a4 = t._5;
             A5 a5 = t._6;
             A6 a6 = t._7;
+            Assert.NotNull(a0);
+            Assert.NotNull(a1);
+            Assert.NotNull(a2);
+            Assert.NotNull(a3);
+            Assert.NotNull(a4);
+            Assert.NotNull(a5);
+            Assert.NotNull(a6);
         }
 
         [Test]
@@ -282,6 +310,14 @@ namespace LambdaTest
             A5 a5 = t._6;
             A6 a6 = t._7;
             A7 a7 = t._8;
+            Assert.NotNull(a0);
+            Assert.NotNull(a1);
+            Assert.NotNull(a2);
+            Assert.NotNull(a3);
+            Assert.NotNull(a4);
+            Assert.NotNull(a5);
+            Assert.NotNull(a6);
+            Assert.NotNull(a7);
         }
 
         [Test]
@@ -297,6 +333,15 @@ namespace LambdaTest
             A6 a6 = t._7;
             A7 a7 = t._8;
             A8 a8 = t._9;
+            Assert.NotNull(a0);
+            Assert.NotNull(a1);
+            Assert.NotNull(a2);
+            Assert.NotNull(a3);
+            Assert.NotNull(a4);
+            Assert.NotNull(a5);
+            Assert.NotNull(a6);
+            Assert.NotNull(a7);
+            Assert.NotNull(a8);
         }
 
         [Test]
@@ -313,6 +358,16 @@ namespace LambdaTest
             A7 a7 = t._8;
             A8 a8 = t._9;
             A9 a9 = t._10;
+            Assert.NotNull(a0);
+            Assert.NotNull(a1);
+            Assert.NotNull(a2);
+            Assert.NotNull(a3);
+            Assert.NotNull(a4);
+            Assert.NotNull(a5);
+            Assert.NotNull(a6);
+            Assert.NotNull(a7);
+            Assert.NotNull(a8);
+            Assert.NotNull(a9);
         }
 
         [Test]
@@ -330,6 +385,17 @@ namespace LambdaTest
             A8 a8 = t._9;
             A9 a9 = t._10;
             A10 a10 = t._11;
+            Assert.NotNull(a0);
+            Assert.NotNull(a1);
+            Assert.NotNull(a2);
+            Assert.NotNull(a3);
+            Assert.NotNull(a4);
+            Assert.NotNull(a5);
+            Assert.NotNull(a6);
+            Assert.NotNull(a7);
+            Assert.NotNull(a8);
+            Assert.NotNull(a9);
+            Assert.NotNull(a10);
         }
 
         [Test]
@@ -348,6 +414,18 @@ namespace LambdaTest
             A9 a9 = t._10;
             A10 a10 = t._11;
             A11 a11 = t._12;
+            Assert.NotNull(a0);
+            Assert.NotNull(a1);
+            Assert.NotNull(a2);
+            Assert.NotNull(a3);
+            Assert.NotNull(a4);
+            Assert.NotNull(a5);
+            Assert.NotNull(a6);
+            Assert.NotNull(a7);
+            Assert.NotNull(a8);
+            Assert.NotNull(a9);
+            Assert.NotNull(a10);
+            Assert.NotNull(a11);
         }
 
         [Test]
@@ -367,6 +445,19 @@ namespace LambdaTest
             A10 a10 = t._11;
             A11 a11 = t._12;
             A12 a12 = t._13;
+            Assert.NotNull(a0);
+            Assert.NotNull(a1);
+            Assert.NotNull(a2);
+            Assert.NotNull(a3);
+            Assert.NotNull(a4);
+            Assert.NotNull(a5);
+            Assert.NotNull(a6);
+            Assert.NotNull(a7);
+            Assert.NotNull(a8);
+            Assert.NotNull(a9);
+            Assert.NotNull(a10);
+            Assert.NotNull(a11);
+            Assert.NotNull(a12);
         }
 
         [Test]
@@ -387,6 +478,20 @@ namespace LambdaTest
             A11 a11 = t._12;
             A12 a12 = t._13;
             A13 a13 = t._14;
+            Assert.NotNull(a0);
+            Assert.NotNull(a1);
+            Assert.NotNull(a2);
+            Assert.NotNull(a3);
+            Assert.NotNull(a4);
+            Assert.NotNull(a5);
+            Assert.NotNull(a6);
+            Assert.NotNull(a7);
+            Assert.NotNull(a8);
+            Assert.NotNull(a9);
+            Assert.NotNull(a10);
+            Assert.NotNull(a11);
+            Assert.NotNull(a12);
+            Assert.NotNull(a13);
         }
 
         [Test]
@@ -408,6 +513,21 @@ namespace LambdaTest
             A12 a12 = t._13;
             A13 a13 = t._14;
             A14 a14 = t._15;
+            Assert.NotNull(a0);
+            Assert.NotNull(a1);
+            Assert.NotNull(a2);
+            Assert.NotNull(a3);
+            Assert.NotNull(a4);
+            Assert.NotNull(a5);
+            Assert.NotNull(a6);
+            Assert.NotNull(a7);
+            Assert.NotNull(a8);
+            Assert.NotNull(a9);
+            Assert.NotNull(a10);
+            Assert.NotNull(a11);
+            Assert.NotNull(a12);
+            Assert.NotNull(a13);
+            Assert.NotNull(a14);
         }
 
         [Test]
@@ -430,6 +550,22 @@ namespace LambdaTest
             A13 a13 = t._14;
             A14 a14 = t._15;
             A15 a15 = t._16;
+            Assert.NotNull(a0);
+            Assert.NotNull(a1);
+            Assert.NotNull(a2);
+            Assert.NotNull(a3);
+            Assert.NotNull(a4);
+            Assert.NotNull(a5);
+            Assert.NotNull(a6);
+            Assert.NotNull(a7);
+            Assert.NotNull(a8);
+            Assert.NotNull(a9);
+            Assert.NotNull(a10);
+            Assert.NotNull(a11);
+            Assert.NotNull(a12);
+            Assert.NotNull(a13);
+            Assert.NotNull(a14);
+            Assert.NotNull(a15);
         }
 
         [Test]
@@ -453,6 +589,23 @@ namespace LambdaTest
             A14 a14 = t._15;
             A15 a15 = t._16;
             A16 a16 = t._17;
+            Assert.NotNull(a0);
+            Assert.NotNull(a1);
+            Assert.NotNull(a2);
+            Assert.NotNull(a3);
+            Assert.NotNull(a4);
+            Assert.NotNull(a5);
+            Assert.NotNull(a6);
+            Assert.NotNull(a7);
+            Assert.NotNull(a8);
+            Assert.NotNull(a9);
+            Assert.NotNull(a10);
+            Assert.NotNull(a11);
+            Assert.NotNull(a12);
+            Assert.NotNull(a13);
+            Assert.NotNull(a14);
+            Assert.NotNull(a15);
+            Assert.NotNull(a16);
         }
 
         [Test]
@@ -477,6 +630,24 @@ namespace LambdaTest
             A15 a15 = t._16;
             A16 a16 = t._17;
             A17 a17 = t._18;
+            Assert.NotNull(a0);
+            Assert.NotNull(a1);
+            Assert.NotNull(a2);
+            Assert.NotNull(a3);
+            Assert.NotNull(a4);
+            Assert.NotNull(a5);
+            Assert.NotNull(a6);
+            Assert.NotNull(a7);
+            Assert.NotNull(a8);
+            Assert.NotNull(a9);
+            Assert.NotNull(a10);
+            Assert.NotNull(a11);
+            Assert.NotNull(a12);
+            Assert.NotNull(a13);
+            Assert.NotNull(a14);
+            Assert.NotNull(a15);
+            Assert.NotNull(a16);
+            Assert.NotNull(a17);
         }
 
         [Test]
@@ -502,6 +673,25 @@ namespace LambdaTest
             A16 a16 = t._17;
             A17 a17 = t._18;
             A18 a18 = t._19;
+            Assert.NotNull(a0);
+            Assert.NotNull(a1);
+            Assert.NotNull(a2);
+            Assert.NotNull(a3);
+            Assert.NotNull(a4);
+            Assert.NotNull(a5);
+            Assert.NotNull(a6);
+            Assert.NotNull(a7);
+            Assert.NotNull(a8);
+            Assert.NotNull(a9);
+            Assert.NotNull(a10);
+            Assert.NotNull(a11);
+            Assert.NotNull(a12);
+            Assert.NotNull(a13);
+            Assert.NotNull(a14);
+            Assert.NotNull(a15);
+            Assert.NotNull(a16);
+            Assert.NotNull(a17);
+            Assert.NotNull(a18);
         }
 
         [Test]
@@ -528,6 +718,26 @@ namespace LambdaTest
             A17 a17 = t._18;
             A18 a18 = t._19;
             A19 a19 = t._20;
+            Assert.NotNull(a0);
+            Assert.NotNull(a1);
+            Assert.NotNull(a2);
+            Assert.NotNull(a3);
+            Assert.NotNull(a4);
+            Assert.NotNull(a5);
+            Assert.NotNull(a6);
+            Assert.NotNull(a7);
+            Assert.NotNull(a8);
+            Assert.NotNull(a9);
+            Assert.NotNull(a10);
+            Assert.NotNull(a11);
+            Assert.NotNull(a12);
+            Assert.NotNull(a13);
+            Assert.NotNull(a14);
+            Assert.NotNull(a15);
+            Assert.NotNull(a16);
+            Assert.NotNull(a17);
+            Assert.NotNull(a18);
+            Assert.NotNull(a19);
         }
 
         [Test]
@@ -555,6 +765,27 @@ namespace LambdaTest
             A18 a18 = t._19;
             A19 a19 = t._20;
             A20 a20 = t._21;
+            Assert.NotNull(a0);
+            Assert.NotNull(a1);
+            Assert.NotNull(a2);
+            Assert.NotNull(a3);
+            Assert.NotNull(a4);
+            Assert.NotNull(a5);
+            Assert.NotNull(a6);
+            Assert.NotNull(a7);
+            Assert.NotNull(a8);
+            Assert.NotNull(a9);
+            Assert.NotNull(a10);
+            Assert.NotNull(a11);
+            Assert.NotNull(a12);
+            Assert.NotNull(a13);
+            Assert.NotNull(a14);
+            Assert.NotNull(a15);
+            Assert.NotNull(a16);
+            Assert.NotNull(a17);
+            Assert.NotNull(a18);
+            Assert.NotNull(a19);
+            Assert.NotNull(a20);
         }
 
         [Test]
@@ -583,6 +814,28 @@ namespace LambdaTest
             A19 a19 = t._20;
             A20 a20 = t._21;
             A21 a21 = t._22;
+            Assert.NotNull(a0);
+            Assert.NotNull(a1);
+            Assert.NotNull(a2);
+            Assert.NotNull(a3);
+            Assert.NotNull(a4);
+            Assert.NotNull(a5);
+            Assert.NotNull(a6);
+            Assert.NotNull(a7);
+            Assert.NotNull(a8);
+            Assert.NotNull(a9);
+            Assert.NotNull(a10);
+            Assert.NotNull(a11);
+            Assert.NotNull(a12);
+            Assert.NotNull(a13);
+            Assert.NotNull(a14);
+            Assert.NotNull(a15);
+            Assert.NotNull(a16);
+            Assert.NotNull(a17);
+            Assert.NotNull(a18);
+            Assert.NotNull(a19);
+            Assert.NotNull(a20);
+            Assert.NotNull(a21);
         }
 
         [Test]
@@ -612,6 +865,29 @@ namespace LambdaTest
             A20 a20 = t._21;
             A21 a21 = t._22;
             A22 a22 = t._23;
+            Assert.NotNull(a0);
+            Assert.NotNull(a1);
+            Assert.NotNull(a2);
+            Assert.NotNull(a3);
+            Assert.NotNull(a4);
+            Assert.NotNull(a5);
+            Assert.NotNull(a6);
+            Assert.NotNull(a7);
+            Assert.NotNull(a8);
+            Assert.NotNull(a9);
+            Assert.NotNull(a10);
+            Assert.NotNull(a11);
+            Assert.NotNull(a12);
+            Assert.NotNull(a13);
+            Assert.NotNull(a14);
+            Assert.NotNull(a15);
+            Assert.NotNull(a16);
+            Assert.NotNull(a17);
+            Assert.NotNull(a18);
+            Assert.NotNull(a19);
+            Assert.NotNull(a20);
+            Assert.NotNull(a21);
+            Assert.NotNull(a22);
         }
 
     }

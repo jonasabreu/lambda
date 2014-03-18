@@ -82,7 +82,8 @@ namespace LambdaGenerators
         {
             return "[Test] public void AssignmentMustWorkForRec" + k + "() {\r\n" +
                 "var t = _.t(" + string.Join(", ", Enumerable.Range(0, k).Select(i => "new B" + i + "()")) + ");\r\n" +
-                string.Join("\r\n", Enumerable.Range(0, k).Select(i => "A" + i + " a" + i + " = t._" + (i + 1) + ";")) +
+                string.Join("\r\n", Enumerable.Range(0, k).Select(i => "A" + i + " a" + i + " = t._" + (i + 1) + ";")) + "\r\n" +
+                string.Join("\r\n", Enumerable.Range(0, k).Select(i => "Assert.NotNull(a" + i + ");")) +
                 "\r\n}\r\n";
         }
 
