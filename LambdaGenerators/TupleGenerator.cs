@@ -22,6 +22,7 @@ namespace LambdaGenerators
     {
         static void Main(string[] args)
         {
+
             var i = 23;
             var classes =
             Using("using Lambda;\r\n", () =>
@@ -53,7 +54,9 @@ namespace LambdaGenerators
                             MotherFixtures(i),
                             ChildrenFixtures(i),
                             TupleVarianceTests(i),
-                            TupleAssignmentTests(i)
+                            TupleAssignmentTests(i),
+                            TupleEqualityTests(i),
+                            TupleHashcodeTests(i)
                         }    
                     )
                 }
@@ -62,6 +65,50 @@ namespace LambdaGenerators
             File.WriteAllText("../../../Lambda/Tuples.cs", classes);
             File.WriteAllText("../../../LambdaTest/TupleTests.cs", testes);
 
+        }
+
+        private static string TupleHashcodeTests(int k)
+        {
+            return "[TestFixture] public class TupleHashcodeTests\r\n{\r\n" +
+                    string.Join("\r\n", Enumerable.Range(1, k).Select(TupleHashcodeTestMethod)) +
+                    "\r\n}\r\n";
+        }
+
+        private static string TupleHashcodeTestMethod(int k)
+        {
+            return "[Test] public void Rec" + k + "HashcodeWorks() {\r\n" +
+                "Assert.AreEqual(" + IntTuple(k, 1) + ".GetHashCode(), " + IntTuple(k, 1) + ".GetHashCode());" +
+                "\r\n}\r\n";
+        }
+
+        private static string EqualsMethod(int k)
+        {
+            return "\r\npublic override bool Equals(Object obj) {\r\n" +
+                "if (obj == null) return false;\r\n" +
+                "Rec" + TypeSignature(k) + " other = obj as Rec" + TypeSignature(k) + ";\r\n" +
+                "if ((Object)other == null) return false;\r\n" +
+                "return " + string.Join(" && ", Enumerable.Range(1, k).Select(i => "__" + i + ".Equals(other._" + i + ")")) + ";\r\n}\r\n";
+        }
+
+        private static string TupleEqualityTests(int k)
+        {
+            return "[TestFixture] public class TupleEqualityTests\r\n{\r\n" +
+                    string.Join("\r\n", Enumerable.Range(1, k).Select(TupleEqualityTestMethod)) +
+                    "\r\n}\r\n";
+
+        }
+
+        private static string TupleEqualityTestMethod(int k)
+        {
+            return "[Test] public void Rec" + k + "EqualsWorks() {\r\n" +
+                "Assert.IsTrue(" + IntTuple(k, 1) + ".Equals(" + IntTuple(k, 1) + "));\r\n" +
+                "Assert.IsFalse(" + IntTuple(k, 1) + ".Equals(" + IntTuple(k, 2) + "));\r\n" +
+                "\r\n}\r\n";
+        }
+
+        private static string IntTuple(int k, int n)
+        {
+            return "_.t(" + string.Join(", ", Enumerable.Range(0, k).Select(i => n)) + ")";
         }
 
         private static string GetterImpls(int k)
@@ -129,19 +176,19 @@ namespace LambdaGenerators
         public static string Interface(int i)
         {
             return "public interface Rec" + TypeSignature(i, "out") + " {\r\n" +
-                string.Join("\r\n", Getters(i)) + "\r\n" +            
+                string.Join("\r\n", Getters(i)) + "\r\n" +
             "}\r\n";
         }
 
         private static IEnumerable<string> Getters(int k)
         {
-            return Enumerable.Range(1, k).Select(i => "T" + (i -1) + " _" + i + " { get; }");
+            return Enumerable.Range(1, k).Select(i => "T" + (i - 1) + " _" + i + " { get; }");
         }
 
         public static string Constructor(int i)
         {
             return "\r\npublic RecInternal(" + Parameters(i) + ") {\r\n" +
-                FieldAttribution(i) + "\r\n}";
+                FieldAttribution(i) + "\r\n}\r\n";
         }
 
         public static string FieldAttribution(int i)
@@ -161,7 +208,7 @@ namespace LambdaGenerators
         public static IEnumerable<string> Fields(int k)
         {
             return Enumerable.Range(1, k).Select(i =>
-                "public readonly T" + (i - 1) + " __" + i + ";"
+                "private readonly T" + (i - 1) + " __" + i + ";"
             );
         }
 

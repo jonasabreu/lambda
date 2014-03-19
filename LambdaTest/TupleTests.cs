@@ -892,4 +892,336 @@ namespace LambdaTest
 
     }
 
+    [TestFixture]
+    public class TupleEqualityTests
+    {
+        [Test]
+        public void Rec1EqualsWorks()
+        {
+            Assert.IsTrue(_.t(1).Equals(_.t(1)));
+            Assert.IsFalse(_.t(1).Equals(_.t(2)));
+
+        }
+
+        [Test]
+        public void Rec2EqualsWorks()
+        {
+            Assert.IsTrue(_.t(1, 1).Equals(_.t(1, 1)));
+            Assert.IsFalse(_.t(1, 1).Equals(_.t(2, 2)));
+
+        }
+
+        [Test]
+        public void Rec3EqualsWorks()
+        {
+            Assert.IsTrue(_.t(1, 1, 1).Equals(_.t(1, 1, 1)));
+            Assert.IsFalse(_.t(1, 1, 1).Equals(_.t(2, 2, 2)));
+
+        }
+
+        [Test]
+        public void Rec4EqualsWorks()
+        {
+            Assert.IsTrue(_.t(1, 1, 1, 1).Equals(_.t(1, 1, 1, 1)));
+            Assert.IsFalse(_.t(1, 1, 1, 1).Equals(_.t(2, 2, 2, 2)));
+
+        }
+
+        [Test]
+        public void Rec5EqualsWorks()
+        {
+            Assert.IsTrue(_.t(1, 1, 1, 1, 1).Equals(_.t(1, 1, 1, 1, 1)));
+            Assert.IsFalse(_.t(1, 1, 1, 1, 1).Equals(_.t(2, 2, 2, 2, 2)));
+
+        }
+
+        [Test]
+        public void Rec6EqualsWorks()
+        {
+            Assert.IsTrue(_.t(1, 1, 1, 1, 1, 1).Equals(_.t(1, 1, 1, 1, 1, 1)));
+            Assert.IsFalse(_.t(1, 1, 1, 1, 1, 1).Equals(_.t(2, 2, 2, 2, 2, 2)));
+
+        }
+
+        [Test]
+        public void Rec7EqualsWorks()
+        {
+            Assert.IsTrue(_.t(1, 1, 1, 1, 1, 1, 1).Equals(_.t(1, 1, 1, 1, 1, 1, 1)));
+            Assert.IsFalse(_.t(1, 1, 1, 1, 1, 1, 1).Equals(_.t(2, 2, 2, 2, 2, 2, 2)));
+
+        }
+
+        [Test]
+        public void Rec8EqualsWorks()
+        {
+            Assert.IsTrue(_.t(1, 1, 1, 1, 1, 1, 1, 1).Equals(_.t(1, 1, 1, 1, 1, 1, 1, 1)));
+            Assert.IsFalse(_.t(1, 1, 1, 1, 1, 1, 1, 1).Equals(_.t(2, 2, 2, 2, 2, 2, 2, 2)));
+
+        }
+
+        [Test]
+        public void Rec9EqualsWorks()
+        {
+            Assert.IsTrue(_.t(1, 1, 1, 1, 1, 1, 1, 1, 1).Equals(_.t(1, 1, 1, 1, 1, 1, 1, 1, 1)));
+            Assert.IsFalse(_.t(1, 1, 1, 1, 1, 1, 1, 1, 1).Equals(_.t(2, 2, 2, 2, 2, 2, 2, 2, 2)));
+
+        }
+
+        [Test]
+        public void Rec10EqualsWorks()
+        {
+            Assert.IsTrue(_.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1).Equals(_.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)));
+            Assert.IsFalse(_.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1).Equals(_.t(2, 2, 2, 2, 2, 2, 2, 2, 2, 2)));
+
+        }
+
+        [Test]
+        public void Rec11EqualsWorks()
+        {
+            Assert.IsTrue(_.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1).Equals(_.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)));
+            Assert.IsFalse(_.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1).Equals(_.t(2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2)));
+
+        }
+
+        [Test]
+        public void Rec12EqualsWorks()
+        {
+            Assert.IsTrue(_.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1).Equals(_.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)));
+            Assert.IsFalse(_.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1).Equals(_.t(2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2)));
+
+        }
+
+        [Test]
+        public void Rec13EqualsWorks()
+        {
+            Assert.IsTrue(_.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1).Equals(_.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)));
+            Assert.IsFalse(_.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1).Equals(_.t(2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2)));
+
+        }
+
+        [Test]
+        public void Rec14EqualsWorks()
+        {
+            Assert.IsTrue(_.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1).Equals(_.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)));
+            Assert.IsFalse(_.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1).Equals(_.t(2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2)));
+
+        }
+
+        [Test]
+        public void Rec15EqualsWorks()
+        {
+            Assert.IsTrue(_.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1).Equals(_.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)));
+            Assert.IsFalse(_.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1).Equals(_.t(2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2)));
+
+        }
+
+        [Test]
+        public void Rec16EqualsWorks()
+        {
+            Assert.IsTrue(_.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1).Equals(_.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)));
+            Assert.IsFalse(_.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1).Equals(_.t(2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2)));
+
+        }
+
+        [Test]
+        public void Rec17EqualsWorks()
+        {
+            Assert.IsTrue(_.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1).Equals(_.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)));
+            Assert.IsFalse(_.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1).Equals(_.t(2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2)));
+
+        }
+
+        [Test]
+        public void Rec18EqualsWorks()
+        {
+            Assert.IsTrue(_.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1).Equals(_.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)));
+            Assert.IsFalse(_.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1).Equals(_.t(2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2)));
+
+        }
+
+        [Test]
+        public void Rec19EqualsWorks()
+        {
+            Assert.IsTrue(_.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1).Equals(_.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)));
+            Assert.IsFalse(_.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1).Equals(_.t(2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2)));
+
+        }
+
+        [Test]
+        public void Rec20EqualsWorks()
+        {
+            Assert.IsTrue(_.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1).Equals(_.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)));
+            Assert.IsFalse(_.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1).Equals(_.t(2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2)));
+
+        }
+
+        [Test]
+        public void Rec21EqualsWorks()
+        {
+            Assert.IsTrue(_.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1).Equals(_.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)));
+            Assert.IsFalse(_.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1).Equals(_.t(2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2)));
+
+        }
+
+        [Test]
+        public void Rec22EqualsWorks()
+        {
+            Assert.IsTrue(_.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1).Equals(_.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)));
+            Assert.IsFalse(_.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1).Equals(_.t(2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2)));
+
+        }
+
+        [Test]
+        public void Rec23EqualsWorks()
+        {
+            Assert.IsTrue(_.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1).Equals(_.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)));
+            Assert.IsFalse(_.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1).Equals(_.t(2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2)));
+
+        }
+
+    }
+
+    [TestFixture]
+    public class TupleHashcodeTests
+    {
+        [Test]
+        public void Rec1HashcodeWorks()
+        {
+            Assert.AreEqual(_.t(1).GetHashCode(), _.t(1).GetHashCode());
+        }
+
+        [Test]
+        public void Rec2HashcodeWorks()
+        {
+            Assert.AreEqual(_.t(1, 1).GetHashCode(), _.t(1, 1).GetHashCode());
+        }
+
+        [Test]
+        public void Rec3HashcodeWorks()
+        {
+            Assert.AreEqual(_.t(1, 1, 1).GetHashCode(), _.t(1, 1, 1).GetHashCode());
+        }
+
+        [Test]
+        public void Rec4HashcodeWorks()
+        {
+            Assert.AreEqual(_.t(1, 1, 1, 1).GetHashCode(), _.t(1, 1, 1, 1).GetHashCode());
+        }
+
+        [Test]
+        public void Rec5HashcodeWorks()
+        {
+            Assert.AreEqual(_.t(1, 1, 1, 1, 1).GetHashCode(), _.t(1, 1, 1, 1, 1).GetHashCode());
+        }
+
+        [Test]
+        public void Rec6HashcodeWorks()
+        {
+            Assert.AreEqual(_.t(1, 1, 1, 1, 1, 1).GetHashCode(), _.t(1, 1, 1, 1, 1, 1).GetHashCode());
+        }
+
+        [Test]
+        public void Rec7HashcodeWorks()
+        {
+            Assert.AreEqual(_.t(1, 1, 1, 1, 1, 1, 1).GetHashCode(), _.t(1, 1, 1, 1, 1, 1, 1).GetHashCode());
+        }
+
+        [Test]
+        public void Rec8HashcodeWorks()
+        {
+            Assert.AreEqual(_.t(1, 1, 1, 1, 1, 1, 1, 1).GetHashCode(), _.t(1, 1, 1, 1, 1, 1, 1, 1).GetHashCode());
+        }
+
+        [Test]
+        public void Rec9HashcodeWorks()
+        {
+            Assert.AreEqual(_.t(1, 1, 1, 1, 1, 1, 1, 1, 1).GetHashCode(), _.t(1, 1, 1, 1, 1, 1, 1, 1, 1).GetHashCode());
+        }
+
+        [Test]
+        public void Rec10HashcodeWorks()
+        {
+            Assert.AreEqual(_.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1).GetHashCode(), _.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1).GetHashCode());
+        }
+
+        [Test]
+        public void Rec11HashcodeWorks()
+        {
+            Assert.AreEqual(_.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1).GetHashCode(), _.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1).GetHashCode());
+        }
+
+        [Test]
+        public void Rec12HashcodeWorks()
+        {
+            Assert.AreEqual(_.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1).GetHashCode(), _.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1).GetHashCode());
+        }
+
+        [Test]
+        public void Rec13HashcodeWorks()
+        {
+            Assert.AreEqual(_.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1).GetHashCode(), _.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1).GetHashCode());
+        }
+
+        [Test]
+        public void Rec14HashcodeWorks()
+        {
+            Assert.AreEqual(_.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1).GetHashCode(), _.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1).GetHashCode());
+        }
+
+        [Test]
+        public void Rec15HashcodeWorks()
+        {
+            Assert.AreEqual(_.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1).GetHashCode(), _.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1).GetHashCode());
+        }
+
+        [Test]
+        public void Rec16HashcodeWorks()
+        {
+            Assert.AreEqual(_.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1).GetHashCode(), _.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1).GetHashCode());
+        }
+
+        [Test]
+        public void Rec17HashcodeWorks()
+        {
+            Assert.AreEqual(_.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1).GetHashCode(), _.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1).GetHashCode());
+        }
+
+        [Test]
+        public void Rec18HashcodeWorks()
+        {
+            Assert.AreEqual(_.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1).GetHashCode(), _.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1).GetHashCode());
+        }
+
+        [Test]
+        public void Rec19HashcodeWorks()
+        {
+            Assert.AreEqual(_.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1).GetHashCode(), _.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1).GetHashCode());
+        }
+
+        [Test]
+        public void Rec20HashcodeWorks()
+        {
+            Assert.AreEqual(_.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1).GetHashCode(), _.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1).GetHashCode());
+        }
+
+        [Test]
+        public void Rec21HashcodeWorks()
+        {
+            Assert.AreEqual(_.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1).GetHashCode(), _.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1).GetHashCode());
+        }
+
+        [Test]
+        public void Rec22HashcodeWorks()
+        {
+            Assert.AreEqual(_.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1).GetHashCode(), _.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1).GetHashCode());
+        }
+
+        [Test]
+        public void Rec23HashcodeWorks()
+        {
+            Assert.AreEqual(_.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1).GetHashCode(), _.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1).GetHashCode());
+        }
+
+    }
+
 }

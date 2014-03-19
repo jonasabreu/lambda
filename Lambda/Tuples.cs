@@ -472,53 +472,57 @@ namespace Lambda
 
     struct RecInternal<T0> : Rec<T0>
     {
-        public readonly T0 __1;
+        private readonly T0 __1;
         public RecInternal(T0 _1)
         {
             this.__1 = _1;
-        }public T0 _1 { get { return __1; } }
+        }
+        public T0 _1 { get { return __1; } }
     }
 
     struct RecInternal<T0, T1> : Rec<T0, T1>
     {
-        public readonly T0 __1;
-        public readonly T1 __2;
+        private readonly T0 __1;
+        private readonly T1 __2;
         public RecInternal(T0 _1, T1 _2)
         {
             this.__1 = _1;
             this.__2 = _2;
-        }public T0 _1 { get { return __1; } }
+        }
+        public T0 _1 { get { return __1; } }
         public T1 _2 { get { return __2; } }
     }
 
     struct RecInternal<T0, T1, T2> : Rec<T0, T1, T2>
     {
-        public readonly T0 __1;
-        public readonly T1 __2;
-        public readonly T2 __3;
+        private readonly T0 __1;
+        private readonly T1 __2;
+        private readonly T2 __3;
         public RecInternal(T0 _1, T1 _2, T2 _3)
         {
             this.__1 = _1;
             this.__2 = _2;
             this.__3 = _3;
-        }public T0 _1 { get { return __1; } }
+        }
+        public T0 _1 { get { return __1; } }
         public T1 _2 { get { return __2; } }
         public T2 _3 { get { return __3; } }
     }
 
     struct RecInternal<T0, T1, T2, T3> : Rec<T0, T1, T2, T3>
     {
-        public readonly T0 __1;
-        public readonly T1 __2;
-        public readonly T2 __3;
-        public readonly T3 __4;
+        private readonly T0 __1;
+        private readonly T1 __2;
+        private readonly T2 __3;
+        private readonly T3 __4;
         public RecInternal(T0 _1, T1 _2, T2 _3, T3 _4)
         {
             this.__1 = _1;
             this.__2 = _2;
             this.__3 = _3;
             this.__4 = _4;
-        }public T0 _1 { get { return __1; } }
+        }
+        public T0 _1 { get { return __1; } }
         public T1 _2 { get { return __2; } }
         public T2 _3 { get { return __3; } }
         public T3 _4 { get { return __4; } }
@@ -526,11 +530,11 @@ namespace Lambda
 
     struct RecInternal<T0, T1, T2, T3, T4> : Rec<T0, T1, T2, T3, T4>
     {
-        public readonly T0 __1;
-        public readonly T1 __2;
-        public readonly T2 __3;
-        public readonly T3 __4;
-        public readonly T4 __5;
+        private readonly T0 __1;
+        private readonly T1 __2;
+        private readonly T2 __3;
+        private readonly T3 __4;
+        private readonly T4 __5;
         public RecInternal(T0 _1, T1 _2, T2 _3, T3 _4, T4 _5)
         {
             this.__1 = _1;
@@ -538,7 +542,8 @@ namespace Lambda
             this.__3 = _3;
             this.__4 = _4;
             this.__5 = _5;
-        }public T0 _1 { get { return __1; } }
+        }
+        public T0 _1 { get { return __1; } }
         public T1 _2 { get { return __2; } }
         public T2 _3 { get { return __3; } }
         public T3 _4 { get { return __4; } }
@@ -547,12 +552,12 @@ namespace Lambda
 
     struct RecInternal<T0, T1, T2, T3, T4, T5> : Rec<T0, T1, T2, T3, T4, T5>
     {
-        public readonly T0 __1;
-        public readonly T1 __2;
-        public readonly T2 __3;
-        public readonly T3 __4;
-        public readonly T4 __5;
-        public readonly T5 __6;
+        private readonly T0 __1;
+        private readonly T1 __2;
+        private readonly T2 __3;
+        private readonly T3 __4;
+        private readonly T4 __5;
+        private readonly T5 __6;
         public RecInternal(T0 _1, T1 _2, T2 _3, T3 _4, T4 _5, T5 _6)
         {
             this.__1 = _1;
@@ -561,7 +566,8 @@ namespace Lambda
             this.__4 = _4;
             this.__5 = _5;
             this.__6 = _6;
-        }public T0 _1 { get { return __1; } }
+        }
+        public T0 _1 { get { return __1; } }
         public T1 _2 { get { return __2; } }
         public T2 _3 { get { return __3; } }
         public T3 _4 { get { return __4; } }
@@ -571,13 +577,13 @@ namespace Lambda
 
     struct RecInternal<T0, T1, T2, T3, T4, T5, T6> : Rec<T0, T1, T2, T3, T4, T5, T6>
     {
-        public readonly T0 __1;
-        public readonly T1 __2;
-        public readonly T2 __3;
-        public readonly T3 __4;
-        public readonly T4 __5;
-        public readonly T5 __6;
-        public readonly T6 __7;
+        private readonly T0 __1;
+        private readonly T1 __2;
+        private readonly T2 __3;
+        private readonly T3 __4;
+        private readonly T4 __5;
+        private readonly T5 __6;
+        private readonly T6 __7;
         public RecInternal(T0 _1, T1 _2, T2 _3, T3 _4, T4 _5, T5 _6, T6 _7)
         {
             this.__1 = _1;
@@ -587,7 +593,8 @@ namespace Lambda
             this.__5 = _5;
             this.__6 = _6;
             this.__7 = _7;
-        }public T0 _1 { get { return __1; } }
+        }
+        public T0 _1 { get { return __1; } }
         public T1 _2 { get { return __2; } }
         public T2 _3 { get { return __3; } }
         public T3 _4 { get { return __4; } }
@@ -598,14 +605,14 @@ namespace Lambda
 
     struct RecInternal<T0, T1, T2, T3, T4, T5, T6, T7> : Rec<T0, T1, T2, T3, T4, T5, T6, T7>
     {
-        public readonly T0 __1;
-        public readonly T1 __2;
-        public readonly T2 __3;
-        public readonly T3 __4;
-        public readonly T4 __5;
-        public readonly T5 __6;
-        public readonly T6 __7;
-        public readonly T7 __8;
+        private readonly T0 __1;
+        private readonly T1 __2;
+        private readonly T2 __3;
+        private readonly T3 __4;
+        private readonly T4 __5;
+        private readonly T5 __6;
+        private readonly T6 __7;
+        private readonly T7 __8;
         public RecInternal(T0 _1, T1 _2, T2 _3, T3 _4, T4 _5, T5 _6, T6 _7, T7 _8)
         {
             this.__1 = _1;
@@ -616,7 +623,8 @@ namespace Lambda
             this.__6 = _6;
             this.__7 = _7;
             this.__8 = _8;
-        }public T0 _1 { get { return __1; } }
+        }
+        public T0 _1 { get { return __1; } }
         public T1 _2 { get { return __2; } }
         public T2 _3 { get { return __3; } }
         public T3 _4 { get { return __4; } }
@@ -628,15 +636,15 @@ namespace Lambda
 
     struct RecInternal<T0, T1, T2, T3, T4, T5, T6, T7, T8> : Rec<T0, T1, T2, T3, T4, T5, T6, T7, T8>
     {
-        public readonly T0 __1;
-        public readonly T1 __2;
-        public readonly T2 __3;
-        public readonly T3 __4;
-        public readonly T4 __5;
-        public readonly T5 __6;
-        public readonly T6 __7;
-        public readonly T7 __8;
-        public readonly T8 __9;
+        private readonly T0 __1;
+        private readonly T1 __2;
+        private readonly T2 __3;
+        private readonly T3 __4;
+        private readonly T4 __5;
+        private readonly T5 __6;
+        private readonly T6 __7;
+        private readonly T7 __8;
+        private readonly T8 __9;
         public RecInternal(T0 _1, T1 _2, T2 _3, T3 _4, T4 _5, T5 _6, T6 _7, T7 _8, T8 _9)
         {
             this.__1 = _1;
@@ -648,7 +656,8 @@ namespace Lambda
             this.__7 = _7;
             this.__8 = _8;
             this.__9 = _9;
-        }public T0 _1 { get { return __1; } }
+        }
+        public T0 _1 { get { return __1; } }
         public T1 _2 { get { return __2; } }
         public T2 _3 { get { return __3; } }
         public T3 _4 { get { return __4; } }
@@ -661,16 +670,16 @@ namespace Lambda
 
     struct RecInternal<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9> : Rec<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9>
     {
-        public readonly T0 __1;
-        public readonly T1 __2;
-        public readonly T2 __3;
-        public readonly T3 __4;
-        public readonly T4 __5;
-        public readonly T5 __6;
-        public readonly T6 __7;
-        public readonly T7 __8;
-        public readonly T8 __9;
-        public readonly T9 __10;
+        private readonly T0 __1;
+        private readonly T1 __2;
+        private readonly T2 __3;
+        private readonly T3 __4;
+        private readonly T4 __5;
+        private readonly T5 __6;
+        private readonly T6 __7;
+        private readonly T7 __8;
+        private readonly T8 __9;
+        private readonly T9 __10;
         public RecInternal(T0 _1, T1 _2, T2 _3, T3 _4, T4 _5, T5 _6, T6 _7, T7 _8, T8 _9, T9 _10)
         {
             this.__1 = _1;
@@ -683,7 +692,8 @@ namespace Lambda
             this.__8 = _8;
             this.__9 = _9;
             this.__10 = _10;
-        }public T0 _1 { get { return __1; } }
+        }
+        public T0 _1 { get { return __1; } }
         public T1 _2 { get { return __2; } }
         public T2 _3 { get { return __3; } }
         public T3 _4 { get { return __4; } }
@@ -697,17 +707,17 @@ namespace Lambda
 
     struct RecInternal<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10> : Rec<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>
     {
-        public readonly T0 __1;
-        public readonly T1 __2;
-        public readonly T2 __3;
-        public readonly T3 __4;
-        public readonly T4 __5;
-        public readonly T5 __6;
-        public readonly T6 __7;
-        public readonly T7 __8;
-        public readonly T8 __9;
-        public readonly T9 __10;
-        public readonly T10 __11;
+        private readonly T0 __1;
+        private readonly T1 __2;
+        private readonly T2 __3;
+        private readonly T3 __4;
+        private readonly T4 __5;
+        private readonly T5 __6;
+        private readonly T6 __7;
+        private readonly T7 __8;
+        private readonly T8 __9;
+        private readonly T9 __10;
+        private readonly T10 __11;
         public RecInternal(T0 _1, T1 _2, T2 _3, T3 _4, T4 _5, T5 _6, T6 _7, T7 _8, T8 _9, T9 _10, T10 _11)
         {
             this.__1 = _1;
@@ -721,7 +731,8 @@ namespace Lambda
             this.__9 = _9;
             this.__10 = _10;
             this.__11 = _11;
-        }public T0 _1 { get { return __1; } }
+        }
+        public T0 _1 { get { return __1; } }
         public T1 _2 { get { return __2; } }
         public T2 _3 { get { return __3; } }
         public T3 _4 { get { return __4; } }
@@ -736,18 +747,18 @@ namespace Lambda
 
     struct RecInternal<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11> : Rec<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>
     {
-        public readonly T0 __1;
-        public readonly T1 __2;
-        public readonly T2 __3;
-        public readonly T3 __4;
-        public readonly T4 __5;
-        public readonly T5 __6;
-        public readonly T6 __7;
-        public readonly T7 __8;
-        public readonly T8 __9;
-        public readonly T9 __10;
-        public readonly T10 __11;
-        public readonly T11 __12;
+        private readonly T0 __1;
+        private readonly T1 __2;
+        private readonly T2 __3;
+        private readonly T3 __4;
+        private readonly T4 __5;
+        private readonly T5 __6;
+        private readonly T6 __7;
+        private readonly T7 __8;
+        private readonly T8 __9;
+        private readonly T9 __10;
+        private readonly T10 __11;
+        private readonly T11 __12;
         public RecInternal(T0 _1, T1 _2, T2 _3, T3 _4, T4 _5, T5 _6, T6 _7, T7 _8, T8 _9, T9 _10, T10 _11, T11 _12)
         {
             this.__1 = _1;
@@ -762,7 +773,8 @@ namespace Lambda
             this.__10 = _10;
             this.__11 = _11;
             this.__12 = _12;
-        }public T0 _1 { get { return __1; } }
+        }
+        public T0 _1 { get { return __1; } }
         public T1 _2 { get { return __2; } }
         public T2 _3 { get { return __3; } }
         public T3 _4 { get { return __4; } }
@@ -778,19 +790,19 @@ namespace Lambda
 
     struct RecInternal<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12> : Rec<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12>
     {
-        public readonly T0 __1;
-        public readonly T1 __2;
-        public readonly T2 __3;
-        public readonly T3 __4;
-        public readonly T4 __5;
-        public readonly T5 __6;
-        public readonly T6 __7;
-        public readonly T7 __8;
-        public readonly T8 __9;
-        public readonly T9 __10;
-        public readonly T10 __11;
-        public readonly T11 __12;
-        public readonly T12 __13;
+        private readonly T0 __1;
+        private readonly T1 __2;
+        private readonly T2 __3;
+        private readonly T3 __4;
+        private readonly T4 __5;
+        private readonly T5 __6;
+        private readonly T6 __7;
+        private readonly T7 __8;
+        private readonly T8 __9;
+        private readonly T9 __10;
+        private readonly T10 __11;
+        private readonly T11 __12;
+        private readonly T12 __13;
         public RecInternal(T0 _1, T1 _2, T2 _3, T3 _4, T4 _5, T5 _6, T6 _7, T7 _8, T8 _9, T9 _10, T10 _11, T11 _12, T12 _13)
         {
             this.__1 = _1;
@@ -806,7 +818,8 @@ namespace Lambda
             this.__11 = _11;
             this.__12 = _12;
             this.__13 = _13;
-        }public T0 _1 { get { return __1; } }
+        }
+        public T0 _1 { get { return __1; } }
         public T1 _2 { get { return __2; } }
         public T2 _3 { get { return __3; } }
         public T3 _4 { get { return __4; } }
@@ -823,20 +836,20 @@ namespace Lambda
 
     struct RecInternal<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13> : Rec<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13>
     {
-        public readonly T0 __1;
-        public readonly T1 __2;
-        public readonly T2 __3;
-        public readonly T3 __4;
-        public readonly T4 __5;
-        public readonly T5 __6;
-        public readonly T6 __7;
-        public readonly T7 __8;
-        public readonly T8 __9;
-        public readonly T9 __10;
-        public readonly T10 __11;
-        public readonly T11 __12;
-        public readonly T12 __13;
-        public readonly T13 __14;
+        private readonly T0 __1;
+        private readonly T1 __2;
+        private readonly T2 __3;
+        private readonly T3 __4;
+        private readonly T4 __5;
+        private readonly T5 __6;
+        private readonly T6 __7;
+        private readonly T7 __8;
+        private readonly T8 __9;
+        private readonly T9 __10;
+        private readonly T10 __11;
+        private readonly T11 __12;
+        private readonly T12 __13;
+        private readonly T13 __14;
         public RecInternal(T0 _1, T1 _2, T2 _3, T3 _4, T4 _5, T5 _6, T6 _7, T7 _8, T8 _9, T9 _10, T10 _11, T11 _12, T12 _13, T13 _14)
         {
             this.__1 = _1;
@@ -853,7 +866,8 @@ namespace Lambda
             this.__12 = _12;
             this.__13 = _13;
             this.__14 = _14;
-        }public T0 _1 { get { return __1; } }
+        }
+        public T0 _1 { get { return __1; } }
         public T1 _2 { get { return __2; } }
         public T2 _3 { get { return __3; } }
         public T3 _4 { get { return __4; } }
@@ -871,21 +885,21 @@ namespace Lambda
 
     struct RecInternal<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14> : Rec<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>
     {
-        public readonly T0 __1;
-        public readonly T1 __2;
-        public readonly T2 __3;
-        public readonly T3 __4;
-        public readonly T4 __5;
-        public readonly T5 __6;
-        public readonly T6 __7;
-        public readonly T7 __8;
-        public readonly T8 __9;
-        public readonly T9 __10;
-        public readonly T10 __11;
-        public readonly T11 __12;
-        public readonly T12 __13;
-        public readonly T13 __14;
-        public readonly T14 __15;
+        private readonly T0 __1;
+        private readonly T1 __2;
+        private readonly T2 __3;
+        private readonly T3 __4;
+        private readonly T4 __5;
+        private readonly T5 __6;
+        private readonly T6 __7;
+        private readonly T7 __8;
+        private readonly T8 __9;
+        private readonly T9 __10;
+        private readonly T10 __11;
+        private readonly T11 __12;
+        private readonly T12 __13;
+        private readonly T13 __14;
+        private readonly T14 __15;
         public RecInternal(T0 _1, T1 _2, T2 _3, T3 _4, T4 _5, T5 _6, T6 _7, T7 _8, T8 _9, T9 _10, T10 _11, T11 _12, T12 _13, T13 _14, T14 _15)
         {
             this.__1 = _1;
@@ -903,7 +917,8 @@ namespace Lambda
             this.__13 = _13;
             this.__14 = _14;
             this.__15 = _15;
-        }public T0 _1 { get { return __1; } }
+        }
+        public T0 _1 { get { return __1; } }
         public T1 _2 { get { return __2; } }
         public T2 _3 { get { return __3; } }
         public T3 _4 { get { return __4; } }
@@ -922,22 +937,22 @@ namespace Lambda
 
     struct RecInternal<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15> : Rec<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15>
     {
-        public readonly T0 __1;
-        public readonly T1 __2;
-        public readonly T2 __3;
-        public readonly T3 __4;
-        public readonly T4 __5;
-        public readonly T5 __6;
-        public readonly T6 __7;
-        public readonly T7 __8;
-        public readonly T8 __9;
-        public readonly T9 __10;
-        public readonly T10 __11;
-        public readonly T11 __12;
-        public readonly T12 __13;
-        public readonly T13 __14;
-        public readonly T14 __15;
-        public readonly T15 __16;
+        private readonly T0 __1;
+        private readonly T1 __2;
+        private readonly T2 __3;
+        private readonly T3 __4;
+        private readonly T4 __5;
+        private readonly T5 __6;
+        private readonly T6 __7;
+        private readonly T7 __8;
+        private readonly T8 __9;
+        private readonly T9 __10;
+        private readonly T10 __11;
+        private readonly T11 __12;
+        private readonly T12 __13;
+        private readonly T13 __14;
+        private readonly T14 __15;
+        private readonly T15 __16;
         public RecInternal(T0 _1, T1 _2, T2 _3, T3 _4, T4 _5, T5 _6, T6 _7, T7 _8, T8 _9, T9 _10, T10 _11, T11 _12, T12 _13, T13 _14, T14 _15, T15 _16)
         {
             this.__1 = _1;
@@ -956,7 +971,8 @@ namespace Lambda
             this.__14 = _14;
             this.__15 = _15;
             this.__16 = _16;
-        }public T0 _1 { get { return __1; } }
+        }
+        public T0 _1 { get { return __1; } }
         public T1 _2 { get { return __2; } }
         public T2 _3 { get { return __3; } }
         public T3 _4 { get { return __4; } }
@@ -976,23 +992,23 @@ namespace Lambda
 
     struct RecInternal<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16> : Rec<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16>
     {
-        public readonly T0 __1;
-        public readonly T1 __2;
-        public readonly T2 __3;
-        public readonly T3 __4;
-        public readonly T4 __5;
-        public readonly T5 __6;
-        public readonly T6 __7;
-        public readonly T7 __8;
-        public readonly T8 __9;
-        public readonly T9 __10;
-        public readonly T10 __11;
-        public readonly T11 __12;
-        public readonly T12 __13;
-        public readonly T13 __14;
-        public readonly T14 __15;
-        public readonly T15 __16;
-        public readonly T16 __17;
+        private readonly T0 __1;
+        private readonly T1 __2;
+        private readonly T2 __3;
+        private readonly T3 __4;
+        private readonly T4 __5;
+        private readonly T5 __6;
+        private readonly T6 __7;
+        private readonly T7 __8;
+        private readonly T8 __9;
+        private readonly T9 __10;
+        private readonly T10 __11;
+        private readonly T11 __12;
+        private readonly T12 __13;
+        private readonly T13 __14;
+        private readonly T14 __15;
+        private readonly T15 __16;
+        private readonly T16 __17;
         public RecInternal(T0 _1, T1 _2, T2 _3, T3 _4, T4 _5, T5 _6, T6 _7, T7 _8, T8 _9, T9 _10, T10 _11, T11 _12, T12 _13, T13 _14, T14 _15, T15 _16, T16 _17)
         {
             this.__1 = _1;
@@ -1012,7 +1028,8 @@ namespace Lambda
             this.__15 = _15;
             this.__16 = _16;
             this.__17 = _17;
-        }public T0 _1 { get { return __1; } }
+        }
+        public T0 _1 { get { return __1; } }
         public T1 _2 { get { return __2; } }
         public T2 _3 { get { return __3; } }
         public T3 _4 { get { return __4; } }
@@ -1033,24 +1050,24 @@ namespace Lambda
 
     struct RecInternal<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17> : Rec<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17>
     {
-        public readonly T0 __1;
-        public readonly T1 __2;
-        public readonly T2 __3;
-        public readonly T3 __4;
-        public readonly T4 __5;
-        public readonly T5 __6;
-        public readonly T6 __7;
-        public readonly T7 __8;
-        public readonly T8 __9;
-        public readonly T9 __10;
-        public readonly T10 __11;
-        public readonly T11 __12;
-        public readonly T12 __13;
-        public readonly T13 __14;
-        public readonly T14 __15;
-        public readonly T15 __16;
-        public readonly T16 __17;
-        public readonly T17 __18;
+        private readonly T0 __1;
+        private readonly T1 __2;
+        private readonly T2 __3;
+        private readonly T3 __4;
+        private readonly T4 __5;
+        private readonly T5 __6;
+        private readonly T6 __7;
+        private readonly T7 __8;
+        private readonly T8 __9;
+        private readonly T9 __10;
+        private readonly T10 __11;
+        private readonly T11 __12;
+        private readonly T12 __13;
+        private readonly T13 __14;
+        private readonly T14 __15;
+        private readonly T15 __16;
+        private readonly T16 __17;
+        private readonly T17 __18;
         public RecInternal(T0 _1, T1 _2, T2 _3, T3 _4, T4 _5, T5 _6, T6 _7, T7 _8, T8 _9, T9 _10, T10 _11, T11 _12, T12 _13, T13 _14, T14 _15, T15 _16, T16 _17, T17 _18)
         {
             this.__1 = _1;
@@ -1071,7 +1088,8 @@ namespace Lambda
             this.__16 = _16;
             this.__17 = _17;
             this.__18 = _18;
-        }public T0 _1 { get { return __1; } }
+        }
+        public T0 _1 { get { return __1; } }
         public T1 _2 { get { return __2; } }
         public T2 _3 { get { return __3; } }
         public T3 _4 { get { return __4; } }
@@ -1093,25 +1111,25 @@ namespace Lambda
 
     struct RecInternal<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18> : Rec<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18>
     {
-        public readonly T0 __1;
-        public readonly T1 __2;
-        public readonly T2 __3;
-        public readonly T3 __4;
-        public readonly T4 __5;
-        public readonly T5 __6;
-        public readonly T6 __7;
-        public readonly T7 __8;
-        public readonly T8 __9;
-        public readonly T9 __10;
-        public readonly T10 __11;
-        public readonly T11 __12;
-        public readonly T12 __13;
-        public readonly T13 __14;
-        public readonly T14 __15;
-        public readonly T15 __16;
-        public readonly T16 __17;
-        public readonly T17 __18;
-        public readonly T18 __19;
+        private readonly T0 __1;
+        private readonly T1 __2;
+        private readonly T2 __3;
+        private readonly T3 __4;
+        private readonly T4 __5;
+        private readonly T5 __6;
+        private readonly T6 __7;
+        private readonly T7 __8;
+        private readonly T8 __9;
+        private readonly T9 __10;
+        private readonly T10 __11;
+        private readonly T11 __12;
+        private readonly T12 __13;
+        private readonly T13 __14;
+        private readonly T14 __15;
+        private readonly T15 __16;
+        private readonly T16 __17;
+        private readonly T17 __18;
+        private readonly T18 __19;
         public RecInternal(T0 _1, T1 _2, T2 _3, T3 _4, T4 _5, T5 _6, T6 _7, T7 _8, T8 _9, T9 _10, T10 _11, T11 _12, T12 _13, T13 _14, T14 _15, T15 _16, T16 _17, T17 _18, T18 _19)
         {
             this.__1 = _1;
@@ -1133,7 +1151,8 @@ namespace Lambda
             this.__17 = _17;
             this.__18 = _18;
             this.__19 = _19;
-        }public T0 _1 { get { return __1; } }
+        }
+        public T0 _1 { get { return __1; } }
         public T1 _2 { get { return __2; } }
         public T2 _3 { get { return __3; } }
         public T3 _4 { get { return __4; } }
@@ -1156,26 +1175,26 @@ namespace Lambda
 
     struct RecInternal<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19> : Rec<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19>
     {
-        public readonly T0 __1;
-        public readonly T1 __2;
-        public readonly T2 __3;
-        public readonly T3 __4;
-        public readonly T4 __5;
-        public readonly T5 __6;
-        public readonly T6 __7;
-        public readonly T7 __8;
-        public readonly T8 __9;
-        public readonly T9 __10;
-        public readonly T10 __11;
-        public readonly T11 __12;
-        public readonly T12 __13;
-        public readonly T13 __14;
-        public readonly T14 __15;
-        public readonly T15 __16;
-        public readonly T16 __17;
-        public readonly T17 __18;
-        public readonly T18 __19;
-        public readonly T19 __20;
+        private readonly T0 __1;
+        private readonly T1 __2;
+        private readonly T2 __3;
+        private readonly T3 __4;
+        private readonly T4 __5;
+        private readonly T5 __6;
+        private readonly T6 __7;
+        private readonly T7 __8;
+        private readonly T8 __9;
+        private readonly T9 __10;
+        private readonly T10 __11;
+        private readonly T11 __12;
+        private readonly T12 __13;
+        private readonly T13 __14;
+        private readonly T14 __15;
+        private readonly T15 __16;
+        private readonly T16 __17;
+        private readonly T17 __18;
+        private readonly T18 __19;
+        private readonly T19 __20;
         public RecInternal(T0 _1, T1 _2, T2 _3, T3 _4, T4 _5, T5 _6, T6 _7, T7 _8, T8 _9, T9 _10, T10 _11, T11 _12, T12 _13, T13 _14, T14 _15, T15 _16, T16 _17, T17 _18, T18 _19, T19 _20)
         {
             this.__1 = _1;
@@ -1198,7 +1217,8 @@ namespace Lambda
             this.__18 = _18;
             this.__19 = _19;
             this.__20 = _20;
-        }public T0 _1 { get { return __1; } }
+        }
+        public T0 _1 { get { return __1; } }
         public T1 _2 { get { return __2; } }
         public T2 _3 { get { return __3; } }
         public T3 _4 { get { return __4; } }
@@ -1222,27 +1242,27 @@ namespace Lambda
 
     struct RecInternal<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20> : Rec<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20>
     {
-        public readonly T0 __1;
-        public readonly T1 __2;
-        public readonly T2 __3;
-        public readonly T3 __4;
-        public readonly T4 __5;
-        public readonly T5 __6;
-        public readonly T6 __7;
-        public readonly T7 __8;
-        public readonly T8 __9;
-        public readonly T9 __10;
-        public readonly T10 __11;
-        public readonly T11 __12;
-        public readonly T12 __13;
-        public readonly T13 __14;
-        public readonly T14 __15;
-        public readonly T15 __16;
-        public readonly T16 __17;
-        public readonly T17 __18;
-        public readonly T18 __19;
-        public readonly T19 __20;
-        public readonly T20 __21;
+        private readonly T0 __1;
+        private readonly T1 __2;
+        private readonly T2 __3;
+        private readonly T3 __4;
+        private readonly T4 __5;
+        private readonly T5 __6;
+        private readonly T6 __7;
+        private readonly T7 __8;
+        private readonly T8 __9;
+        private readonly T9 __10;
+        private readonly T10 __11;
+        private readonly T11 __12;
+        private readonly T12 __13;
+        private readonly T13 __14;
+        private readonly T14 __15;
+        private readonly T15 __16;
+        private readonly T16 __17;
+        private readonly T17 __18;
+        private readonly T18 __19;
+        private readonly T19 __20;
+        private readonly T20 __21;
         public RecInternal(T0 _1, T1 _2, T2 _3, T3 _4, T4 _5, T5 _6, T6 _7, T7 _8, T8 _9, T9 _10, T10 _11, T11 _12, T12 _13, T13 _14, T14 _15, T15 _16, T16 _17, T17 _18, T18 _19, T19 _20, T20 _21)
         {
             this.__1 = _1;
@@ -1266,7 +1286,8 @@ namespace Lambda
             this.__19 = _19;
             this.__20 = _20;
             this.__21 = _21;
-        }public T0 _1 { get { return __1; } }
+        }
+        public T0 _1 { get { return __1; } }
         public T1 _2 { get { return __2; } }
         public T2 _3 { get { return __3; } }
         public T3 _4 { get { return __4; } }
@@ -1291,28 +1312,28 @@ namespace Lambda
 
     struct RecInternal<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21> : Rec<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21>
     {
-        public readonly T0 __1;
-        public readonly T1 __2;
-        public readonly T2 __3;
-        public readonly T3 __4;
-        public readonly T4 __5;
-        public readonly T5 __6;
-        public readonly T6 __7;
-        public readonly T7 __8;
-        public readonly T8 __9;
-        public readonly T9 __10;
-        public readonly T10 __11;
-        public readonly T11 __12;
-        public readonly T12 __13;
-        public readonly T13 __14;
-        public readonly T14 __15;
-        public readonly T15 __16;
-        public readonly T16 __17;
-        public readonly T17 __18;
-        public readonly T18 __19;
-        public readonly T19 __20;
-        public readonly T20 __21;
-        public readonly T21 __22;
+        private readonly T0 __1;
+        private readonly T1 __2;
+        private readonly T2 __3;
+        private readonly T3 __4;
+        private readonly T4 __5;
+        private readonly T5 __6;
+        private readonly T6 __7;
+        private readonly T7 __8;
+        private readonly T8 __9;
+        private readonly T9 __10;
+        private readonly T10 __11;
+        private readonly T11 __12;
+        private readonly T12 __13;
+        private readonly T13 __14;
+        private readonly T14 __15;
+        private readonly T15 __16;
+        private readonly T16 __17;
+        private readonly T17 __18;
+        private readonly T18 __19;
+        private readonly T19 __20;
+        private readonly T20 __21;
+        private readonly T21 __22;
         public RecInternal(T0 _1, T1 _2, T2 _3, T3 _4, T4 _5, T5 _6, T6 _7, T7 _8, T8 _9, T9 _10, T10 _11, T11 _12, T12 _13, T13 _14, T14 _15, T15 _16, T16 _17, T17 _18, T18 _19, T19 _20, T20 _21, T21 _22)
         {
             this.__1 = _1;
@@ -1337,7 +1358,8 @@ namespace Lambda
             this.__20 = _20;
             this.__21 = _21;
             this.__22 = _22;
-        }public T0 _1 { get { return __1; } }
+        }
+        public T0 _1 { get { return __1; } }
         public T1 _2 { get { return __2; } }
         public T2 _3 { get { return __3; } }
         public T3 _4 { get { return __4; } }
@@ -1363,29 +1385,29 @@ namespace Lambda
 
     struct RecInternal<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, T22> : Rec<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, T22>
     {
-        public readonly T0 __1;
-        public readonly T1 __2;
-        public readonly T2 __3;
-        public readonly T3 __4;
-        public readonly T4 __5;
-        public readonly T5 __6;
-        public readonly T6 __7;
-        public readonly T7 __8;
-        public readonly T8 __9;
-        public readonly T9 __10;
-        public readonly T10 __11;
-        public readonly T11 __12;
-        public readonly T12 __13;
-        public readonly T13 __14;
-        public readonly T14 __15;
-        public readonly T15 __16;
-        public readonly T16 __17;
-        public readonly T17 __18;
-        public readonly T18 __19;
-        public readonly T19 __20;
-        public readonly T20 __21;
-        public readonly T21 __22;
-        public readonly T22 __23;
+        private readonly T0 __1;
+        private readonly T1 __2;
+        private readonly T2 __3;
+        private readonly T3 __4;
+        private readonly T4 __5;
+        private readonly T5 __6;
+        private readonly T6 __7;
+        private readonly T7 __8;
+        private readonly T8 __9;
+        private readonly T9 __10;
+        private readonly T10 __11;
+        private readonly T11 __12;
+        private readonly T12 __13;
+        private readonly T13 __14;
+        private readonly T14 __15;
+        private readonly T15 __16;
+        private readonly T16 __17;
+        private readonly T17 __18;
+        private readonly T18 __19;
+        private readonly T19 __20;
+        private readonly T20 __21;
+        private readonly T21 __22;
+        private readonly T22 __23;
         public RecInternal(T0 _1, T1 _2, T2 _3, T3 _4, T4 _5, T5 _6, T6 _7, T7 _8, T8 _9, T9 _10, T10 _11, T11 _12, T12 _13, T13 _14, T14 _15, T15 _16, T16 _17, T17 _18, T18 _19, T19 _20, T20 _21, T21 _22, T22 _23)
         {
             this.__1 = _1;
@@ -1411,7 +1433,8 @@ namespace Lambda
             this.__21 = _21;
             this.__22 = _22;
             this.__23 = _23;
-        }public T0 _1 { get { return __1; } }
+        }
+        public T0 _1 { get { return __1; } }
         public T1 _2 { get { return __2; } }
         public T2 _3 { get { return __3; } }
         public T3 _4 { get { return __4; } }
