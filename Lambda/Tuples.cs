@@ -478,6 +478,11 @@ namespace Lambda
             this.__1 = _1;
         }
         public T0 _1 { get { return __1; } }
+        public override string ToString()
+        {
+            return "(" + __1 + ")";
+        }
+
     }
 
     struct RecInternal<T0, T1> : Rec<T0, T1>
@@ -491,6 +496,11 @@ namespace Lambda
         }
         public T0 _1 { get { return __1; } }
         public T1 _2 { get { return __2; } }
+        public override string ToString()
+        {
+            return "(" + __1 + ", " + __2 + ")";
+        }
+
     }
 
     struct RecInternal<T0, T1, T2> : Rec<T0, T1, T2>
@@ -507,6 +517,11 @@ namespace Lambda
         public T0 _1 { get { return __1; } }
         public T1 _2 { get { return __2; } }
         public T2 _3 { get { return __3; } }
+        public override string ToString()
+        {
+            return "(" + __1 + ", " + __2 + ", " + __3 + ")";
+        }
+
     }
 
     struct RecInternal<T0, T1, T2, T3> : Rec<T0, T1, T2, T3>
@@ -526,6 +541,11 @@ namespace Lambda
         public T1 _2 { get { return __2; } }
         public T2 _3 { get { return __3; } }
         public T3 _4 { get { return __4; } }
+        public override string ToString()
+        {
+            return "(" + __1 + ", " + __2 + ", " + __3 + ", " + __4 + ")";
+        }
+
     }
 
     struct RecInternal<T0, T1, T2, T3, T4> : Rec<T0, T1, T2, T3, T4>
@@ -548,6 +568,11 @@ namespace Lambda
         public T2 _3 { get { return __3; } }
         public T3 _4 { get { return __4; } }
         public T4 _5 { get { return __5; } }
+        public override string ToString()
+        {
+            return "(" + __1 + ", " + __2 + ", " + __3 + ", " + __4 + ", " + __5 + ")";
+        }
+
     }
 
     struct RecInternal<T0, T1, T2, T3, T4, T5> : Rec<T0, T1, T2, T3, T4, T5>
@@ -573,6 +598,11 @@ namespace Lambda
         public T3 _4 { get { return __4; } }
         public T4 _5 { get { return __5; } }
         public T5 _6 { get { return __6; } }
+        public override string ToString()
+        {
+            return "(" + __1 + ", " + __2 + ", " + __3 + ", " + __4 + ", " + __5 + ", " + __6 + ")";
+        }
+
     }
 
     struct RecInternal<T0, T1, T2, T3, T4, T5, T6> : Rec<T0, T1, T2, T3, T4, T5, T6>
@@ -601,6 +631,11 @@ namespace Lambda
         public T4 _5 { get { return __5; } }
         public T5 _6 { get { return __6; } }
         public T6 _7 { get { return __7; } }
+        public override string ToString()
+        {
+            return "(" + __1 + ", " + __2 + ", " + __3 + ", " + __4 + ", " + __5 + ", " + __6 + ", " + __7 + ")";
+        }
+
     }
 
     struct RecInternal<T0, T1, T2, T3, T4, T5, T6, T7> : Rec<T0, T1, T2, T3, T4, T5, T6, T7>
@@ -632,6 +667,11 @@ namespace Lambda
         public T5 _6 { get { return __6; } }
         public T6 _7 { get { return __7; } }
         public T7 _8 { get { return __8; } }
+        public override string ToString()
+        {
+            return "(" + __1 + ", " + __2 + ", " + __3 + ", " + __4 + ", " + __5 + ", " + __6 + ", " + __7 + ", " + __8 + ")";
+        }
+
     }
 
     struct RecInternal<T0, T1, T2, T3, T4, T5, T6, T7, T8> : Rec<T0, T1, T2, T3, T4, T5, T6, T7, T8>
@@ -666,6 +706,11 @@ namespace Lambda
         public T6 _7 { get { return __7; } }
         public T7 _8 { get { return __8; } }
         public T8 _9 { get { return __9; } }
+        public override string ToString()
+        {
+            return "(" + __1 + ", " + __2 + ", " + __3 + ", " + __4 + ", " + __5 + ", " + __6 + ", " + __7 + ", " + __8 + ", " + __9 + ")";
+        }
+
     }
 
     struct RecInternal<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9> : Rec<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9>
@@ -703,6 +748,11 @@ namespace Lambda
         public T7 _8 { get { return __8; } }
         public T8 _9 { get { return __9; } }
         public T9 _10 { get { return __10; } }
+        public override string ToString()
+        {
+            return "(" + __1 + ", " + __2 + ", " + __3 + ", " + __4 + ", " + __5 + ", " + __6 + ", " + __7 + ", " + __8 + ", " + __9 + ", " + __10 + ")";
+        }
+
     }
 
     struct RecInternal<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10> : Rec<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>
@@ -743,6 +793,11 @@ namespace Lambda
         public T8 _9 { get { return __9; } }
         public T9 _10 { get { return __10; } }
         public T10 _11 { get { return __11; } }
+        public override string ToString()
+        {
+            return "(" + __1 + ", " + __2 + ", " + __3 + ", " + __4 + ", " + __5 + ", " + __6 + ", " + __7 + ", " + __8 + ", " + __9 + ", " + __10 + ", " + __11 + ")";
+        }
+
     }
 
     struct RecInternal<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11> : Rec<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>
@@ -786,6 +841,11 @@ namespace Lambda
         public T9 _10 { get { return __10; } }
         public T10 _11 { get { return __11; } }
         public T11 _12 { get { return __12; } }
+        public override string ToString()
+        {
+            return "(" + __1 + ", " + __2 + ", " + __3 + ", " + __4 + ", " + __5 + ", " + __6 + ", " + __7 + ", " + __8 + ", " + __9 + ", " + __10 + ", " + __11 + ", " + __12 + ")";
+        }
+
     }
 
     struct RecInternal<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12> : Rec<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12>
@@ -832,6 +892,11 @@ namespace Lambda
         public T10 _11 { get { return __11; } }
         public T11 _12 { get { return __12; } }
         public T12 _13 { get { return __13; } }
+        public override string ToString()
+        {
+            return "(" + __1 + ", " + __2 + ", " + __3 + ", " + __4 + ", " + __5 + ", " + __6 + ", " + __7 + ", " + __8 + ", " + __9 + ", " + __10 + ", " + __11 + ", " + __12 + ", " + __13 + ")";
+        }
+
     }
 
     struct RecInternal<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13> : Rec<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13>
@@ -881,6 +946,11 @@ namespace Lambda
         public T11 _12 { get { return __12; } }
         public T12 _13 { get { return __13; } }
         public T13 _14 { get { return __14; } }
+        public override string ToString()
+        {
+            return "(" + __1 + ", " + __2 + ", " + __3 + ", " + __4 + ", " + __5 + ", " + __6 + ", " + __7 + ", " + __8 + ", " + __9 + ", " + __10 + ", " + __11 + ", " + __12 + ", " + __13 + ", " + __14 + ")";
+        }
+
     }
 
     struct RecInternal<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14> : Rec<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>
@@ -933,6 +1003,11 @@ namespace Lambda
         public T12 _13 { get { return __13; } }
         public T13 _14 { get { return __14; } }
         public T14 _15 { get { return __15; } }
+        public override string ToString()
+        {
+            return "(" + __1 + ", " + __2 + ", " + __3 + ", " + __4 + ", " + __5 + ", " + __6 + ", " + __7 + ", " + __8 + ", " + __9 + ", " + __10 + ", " + __11 + ", " + __12 + ", " + __13 + ", " + __14 + ", " + __15 + ")";
+        }
+
     }
 
     struct RecInternal<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15> : Rec<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15>
@@ -988,6 +1063,11 @@ namespace Lambda
         public T13 _14 { get { return __14; } }
         public T14 _15 { get { return __15; } }
         public T15 _16 { get { return __16; } }
+        public override string ToString()
+        {
+            return "(" + __1 + ", " + __2 + ", " + __3 + ", " + __4 + ", " + __5 + ", " + __6 + ", " + __7 + ", " + __8 + ", " + __9 + ", " + __10 + ", " + __11 + ", " + __12 + ", " + __13 + ", " + __14 + ", " + __15 + ", " + __16 + ")";
+        }
+
     }
 
     struct RecInternal<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16> : Rec<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16>
@@ -1046,6 +1126,11 @@ namespace Lambda
         public T14 _15 { get { return __15; } }
         public T15 _16 { get { return __16; } }
         public T16 _17 { get { return __17; } }
+        public override string ToString()
+        {
+            return "(" + __1 + ", " + __2 + ", " + __3 + ", " + __4 + ", " + __5 + ", " + __6 + ", " + __7 + ", " + __8 + ", " + __9 + ", " + __10 + ", " + __11 + ", " + __12 + ", " + __13 + ", " + __14 + ", " + __15 + ", " + __16 + ", " + __17 + ")";
+        }
+
     }
 
     struct RecInternal<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17> : Rec<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17>
@@ -1107,6 +1192,11 @@ namespace Lambda
         public T15 _16 { get { return __16; } }
         public T16 _17 { get { return __17; } }
         public T17 _18 { get { return __18; } }
+        public override string ToString()
+        {
+            return "(" + __1 + ", " + __2 + ", " + __3 + ", " + __4 + ", " + __5 + ", " + __6 + ", " + __7 + ", " + __8 + ", " + __9 + ", " + __10 + ", " + __11 + ", " + __12 + ", " + __13 + ", " + __14 + ", " + __15 + ", " + __16 + ", " + __17 + ", " + __18 + ")";
+        }
+
     }
 
     struct RecInternal<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18> : Rec<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18>
@@ -1171,6 +1261,11 @@ namespace Lambda
         public T16 _17 { get { return __17; } }
         public T17 _18 { get { return __18; } }
         public T18 _19 { get { return __19; } }
+        public override string ToString()
+        {
+            return "(" + __1 + ", " + __2 + ", " + __3 + ", " + __4 + ", " + __5 + ", " + __6 + ", " + __7 + ", " + __8 + ", " + __9 + ", " + __10 + ", " + __11 + ", " + __12 + ", " + __13 + ", " + __14 + ", " + __15 + ", " + __16 + ", " + __17 + ", " + __18 + ", " + __19 + ")";
+        }
+
     }
 
     struct RecInternal<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19> : Rec<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19>
@@ -1238,6 +1333,11 @@ namespace Lambda
         public T17 _18 { get { return __18; } }
         public T18 _19 { get { return __19; } }
         public T19 _20 { get { return __20; } }
+        public override string ToString()
+        {
+            return "(" + __1 + ", " + __2 + ", " + __3 + ", " + __4 + ", " + __5 + ", " + __6 + ", " + __7 + ", " + __8 + ", " + __9 + ", " + __10 + ", " + __11 + ", " + __12 + ", " + __13 + ", " + __14 + ", " + __15 + ", " + __16 + ", " + __17 + ", " + __18 + ", " + __19 + ", " + __20 + ")";
+        }
+
     }
 
     struct RecInternal<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20> : Rec<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20>
@@ -1308,6 +1408,11 @@ namespace Lambda
         public T18 _19 { get { return __19; } }
         public T19 _20 { get { return __20; } }
         public T20 _21 { get { return __21; } }
+        public override string ToString()
+        {
+            return "(" + __1 + ", " + __2 + ", " + __3 + ", " + __4 + ", " + __5 + ", " + __6 + ", " + __7 + ", " + __8 + ", " + __9 + ", " + __10 + ", " + __11 + ", " + __12 + ", " + __13 + ", " + __14 + ", " + __15 + ", " + __16 + ", " + __17 + ", " + __18 + ", " + __19 + ", " + __20 + ", " + __21 + ")";
+        }
+
     }
 
     struct RecInternal<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21> : Rec<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21>
@@ -1381,6 +1486,11 @@ namespace Lambda
         public T19 _20 { get { return __20; } }
         public T20 _21 { get { return __21; } }
         public T21 _22 { get { return __22; } }
+        public override string ToString()
+        {
+            return "(" + __1 + ", " + __2 + ", " + __3 + ", " + __4 + ", " + __5 + ", " + __6 + ", " + __7 + ", " + __8 + ", " + __9 + ", " + __10 + ", " + __11 + ", " + __12 + ", " + __13 + ", " + __14 + ", " + __15 + ", " + __16 + ", " + __17 + ", " + __18 + ", " + __19 + ", " + __20 + ", " + __21 + ", " + __22 + ")";
+        }
+
     }
 
     struct RecInternal<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, T22> : Rec<T0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, T22>
@@ -1457,6 +1567,11 @@ namespace Lambda
         public T20 _21 { get { return __21; } }
         public T21 _22 { get { return __22; } }
         public T22 _23 { get { return __23; } }
+        public override string ToString()
+        {
+            return "(" + __1 + ", " + __2 + ", " + __3 + ", " + __4 + ", " + __5 + ", " + __6 + ", " + __7 + ", " + __8 + ", " + __9 + ", " + __10 + ", " + __11 + ", " + __12 + ", " + __13 + ", " + __14 + ", " + __15 + ", " + __16 + ", " + __17 + ", " + __18 + ", " + __19 + ", " + __20 + ", " + __21 + ", " + __22 + ", " + __23 + ")";
+        }
+
     }
 
 }

@@ -1224,4 +1224,147 @@ namespace LambdaTest
 
     }
 
+    [TestFixture]
+    public class TupleToStringTests
+    {
+        [Test]
+        public void Rec1ToStringWorks()
+        {
+            Assert.AreEqual("(1)", _.t(1).ToString());
+        }
+
+        [Test]
+        public void Rec2ToStringWorks()
+        {
+            Assert.AreEqual("(1, 1)", _.t(1, 1).ToString());
+        }
+
+        [Test]
+        public void Rec3ToStringWorks()
+        {
+            Assert.AreEqual("(1, 1, 1)", _.t(1, 1, 1).ToString());
+        }
+
+        [Test]
+        public void Rec4ToStringWorks()
+        {
+            Assert.AreEqual("(1, 1, 1, 1)", _.t(1, 1, 1, 1).ToString());
+        }
+
+        [Test]
+        public void Rec5ToStringWorks()
+        {
+            Assert.AreEqual("(1, 1, 1, 1, 1)", _.t(1, 1, 1, 1, 1).ToString());
+        }
+
+        [Test]
+        public void Rec6ToStringWorks()
+        {
+            Assert.AreEqual("(1, 1, 1, 1, 1, 1)", _.t(1, 1, 1, 1, 1, 1).ToString());
+        }
+
+        [Test]
+        public void Rec7ToStringWorks()
+        {
+            Assert.AreEqual("(1, 1, 1, 1, 1, 1, 1)", _.t(1, 1, 1, 1, 1, 1, 1).ToString());
+        }
+
+        [Test]
+        public void Rec8ToStringWorks()
+        {
+            Assert.AreEqual("(1, 1, 1, 1, 1, 1, 1, 1)", _.t(1, 1, 1, 1, 1, 1, 1, 1).ToString());
+        }
+
+        [Test]
+        public void Rec9ToStringWorks()
+        {
+            Assert.AreEqual("(1, 1, 1, 1, 1, 1, 1, 1, 1)", _.t(1, 1, 1, 1, 1, 1, 1, 1, 1).ToString());
+        }
+
+        [Test]
+        public void Rec10ToStringWorks()
+        {
+            Assert.AreEqual("(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)", _.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1).ToString());
+        }
+
+        [Test]
+        public void Rec11ToStringWorks()
+        {
+            Assert.AreEqual("(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)", _.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1).ToString());
+        }
+
+        [Test]
+        public void Rec12ToStringWorks()
+        {
+            Assert.AreEqual("(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)", _.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1).ToString());
+        }
+
+        [Test]
+        public void Rec13ToStringWorks()
+        {
+            Assert.AreEqual("(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)", _.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1).ToString());
+        }
+
+        [Test]
+        public void Rec14ToStringWorks()
+        {
+            Assert.AreEqual("(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)", _.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1).ToString());
+        }
+
+        [Test]
+        public void Rec15ToStringWorks()
+        {
+            Assert.AreEqual("(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)", _.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1).ToString());
+        }
+
+        [Test]
+        public void Rec16ToStringWorks()
+        {
+            Assert.AreEqual("(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)", _.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1).ToString());
+        }
+
+        [Test]
+        public void Rec17ToStringWorks()
+        {
+            Assert.AreEqual("(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)", _.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1).ToString());
+        }
+
+        [Test]
+        public void Rec18ToStringWorks()
+        {
+            Assert.AreEqual("(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)", _.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1).ToString());
+        }
+
+        [Test]
+        public void Rec19ToStringWorks()
+        {
+            Assert.AreEqual("(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)", _.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1).ToString());
+        }
+
+        [Test]
+        public void Rec20ToStringWorks()
+        {
+            Assert.AreEqual("(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)", _.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1).ToString());
+        }
+
+        [Test]
+        public void Rec21ToStringWorks()
+        {
+            Assert.AreEqual("(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)", _.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1).ToString());
+        }
+
+        [Test]
+        public void Rec22ToStringWorks()
+        {
+            Assert.AreEqual("(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)", _.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1).ToString());
+        }
+
+        [Test]
+        public void Rec23ToStringWorks()
+        {
+            Assert.AreEqual("(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)", _.t(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1).ToString());
+        }
+
+    }
+
 }

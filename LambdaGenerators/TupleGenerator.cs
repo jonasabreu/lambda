@@ -38,7 +38,8 @@ namespace LambdaGenerators
                                 string.Join("\r\n", 
                                     Fields(x)
                                 ) + Constructor(x) +
-                                GetterImpls(x)
+                                GetterImpls(x) +
+                                ToStringImpls(x)
                             )
                        )))
                 }
@@ -56,7 +57,8 @@ namespace LambdaGenerators
                             TupleVarianceTests(i),
                             TupleAssignmentTests(i),
                             TupleEqualityTests(i),
-                            TupleHashcodeTests(i)
+                            TupleHashcodeTests(i),
+                            TupleToStringTests(i)
                         }    
                     )
                 }
@@ -65,6 +67,20 @@ namespace LambdaGenerators
             File.WriteAllText("../../../Lambda/Tuples.cs", classes);
             File.WriteAllText("../../../LambdaTest/TupleTests.cs", testes);
 
+        }
+
+        private static string TupleToStringTests(int k)
+        {
+            return "[TestFixture] public class TupleToStringTests\r\n{\r\n" +
+                    string.Join("\r\n", Enumerable.Range(1, k).Select(TupleToStringTestMethod)) +
+                    "\r\n}\r\n";
+        }
+
+        private static string TupleToStringTestMethod(int k)
+        {
+            return "[Test] public void Rec" + k + "ToStringWorks() {\r\n" +
+                "Assert.AreEqual(\"(" + string.Join(", ", Enumerable.Range(1, k).Select(e => "1")) + ")\", " + IntTuple(k, 1) + ".ToString());" +
+                "\r\n}\r\n";
         }
 
         private static string TupleHashcodeTests(int k)
@@ -109,6 +125,13 @@ namespace LambdaGenerators
         private static string IntTuple(int k, int n)
         {
             return "_.t(" + string.Join(", ", Enumerable.Range(0, k).Select(i => n)) + ")";
+        }
+
+        private static string ToStringImpls(int k)
+        {
+            return "public override string ToString() {\r\n" +
+                "return \"(\" + " + string.Join(" + \", \" + ", Enumerable.Range(1, k).Select(e => "__" + e)) + " + \")\";" +
+                "\r\n}\r\n";
         }
 
         private static string GetterImpls(int k)
